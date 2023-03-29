@@ -1,0 +1,627 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+::-webkit-scrollbar {
+    width: 0;
+}
+main #progressbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: #9F44D3;
+    border-radius: 6px;
+    z-index: 1;
+}
+main header {
+    width: 100%;
+    height: 90px;
+    background-image: linear-gradient( 135deg, #CE9FFC 10%, #7367F0 100%);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+main header .link-list {
+    width: 100%;
+    height: 100%;
+}
+main header .link-list nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main header .link-list nav li {
+    display: inline-block;
+    list-style: none;
+    margin: 1rem 2.5rem;
+}
+main header .link-list nav a {
+    text-decoration: none;
+    color: #fafafa;
+    font-size: 20px;;
+    padding: 5px 18px;
+    border: 2px solid #fff;
+}
+main header .link-list nav a:hover {
+    background: #fafafa;
+    color: #000000;
+}
+main header .fa-solid {
+    font-size: 24px;
+    color: #fafafa;
+    cursor: pointer;
+    margin: 10px;
+}
+main .container-story {
+    margin-top: 2rem;
+    width: 100%;
+    height: 300px;
+    background: #F3EFE0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+main .container-story .container {
+    position: relative;
+    width: 250px;
+    height: 100%;
+    background-image: linear-gradient(135deg, #E2B0FF 10%, #9F44D3 100%);
+}
+main .container-story .container .shape-divider-app {
+    width: 100%;
+    height: 100px;
+}
+main .container-story .container .shape-divider-app  .custom-shape-divider-top-1679939300 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+main .container-story .container .shape-divider-app  .custom-shape-divider-top-1679939300 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 80px;
+}
+main .container-story .container .shape-divider-app  .custom-shape-divider-top-1679939300 .shape-fill {
+    fill: #FFFFFF;
+}
+main .container-story .container .circle-area {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .container-story .container .circle-area .circle#user_one {
+    position: absolute;
+    top: 100px;
+    width: 90px;
+    height: 90px;
+    background-image: url("users-perfil/user.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+main .container-story .container .circle-area .circle#user_two {
+    position: absolute;
+    top: 100px;
+    width: 90px;
+    height: 90px;
+    background-image: url("users-perfil/user_two.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+main .container-story .container .circle-area .circle#user_tree {
+    position: absolute;
+    top: 100px;
+    width: 90px;
+    height: 90px;
+    background-image: url("users-perfil/user_tree.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+main .container-story .container .circle-area .circle#user_fuor {
+    position: absolute;
+    top: 100px;
+    width: 90px;
+    height: 90px;
+    background-image: url("users-perfil/User_fuor.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+main .container-story .container .visit-perfil {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .container-story .container .visit-perfil input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background: #FCFFE7;
+    cursor: pointer;
+}
+main .container-story .container .visit-perfil input[type="submit"]:hover {
+    background: transparent;
+    border: 2px solid #FCFFE7;
+    color: #fff;
+}
+main section.main-content {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    width: 100%;
+    height: 920px;
+    background: #F3EFE0;
+    padding: 10px;
+}
+main section.main-content .main-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient( 135deg, #F5CBFF 10%, #C346C2 100%);
+}
+main section.main-content .main-container .lateral-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+}
+main section.main-content .main-container .lateral-menu .header-menu {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    background-image: linear-gradient( 135deg, #EE9AE5 10%, #5961F9 100%);
+    border-bottom: 2px solid #fff;
+}
+main section.main-content .main-container .lateral-menu .header-menu .custom-shape-divider-top-1680010842 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+main section.main-content .main-container .lateral-menu .header-menu .custom-shape-divider-top-1680010842 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 50px;
+}
+main section.main-content .main-container .lateral-menu .header-menu .custom-shape-divider-top-1680010842 .shape-fill {
+    fill: #FFFFFF;
+}
+main section.main-content .main-container .lateral-menu .header-menu .container-for-perfil-area {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main section.main-content .main-container .lateral-menu .header-menu .container-for-perfil-area .circle-perfil#tanjiro_kamado {
+    width: 90px;
+    height: 90px;
+    background-image: url("personal-perfil/tanjiro_kamado.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+main section.main-content .main-container .lateral-menu .header-menu .container-for-perfil-area .name-perfil {
+    margin: 10px;
+}
+main section.main-content .main-container .lateral-menu .header-menu .container-for-perfil-area .name-perfil span {
+    letter-spacing: 3px;
+    color: #fff;
+}
+main section.main-content .main-container .lateral-menu .sidebar {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient( 135deg, #43CBFF 10%, #9708CC 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid #fff;
+}
+main section.main-content .main-container .lateral-menu .sidebar nav li {
+    list-style: none;
+}
+main section.main-content .main-container .lateral-menu .sidebar nav a {
+    position: relative;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    display: table;
+    padding: 10px;
+}
+main section.main-content .main-container .lateral-menu .sidebar nav a:hover {
+    background: rgba(255, 255, 255, .2);
+}
+main section.main-content .main-container .lateral-menu .sidebar nav a .fa-solid {
+    position: relative;
+    width: 50px;
+    height: 40px;
+    font-size: 20px;
+}
+main section.main-content .main-container .lateral-menu .sidebar nav .nav-item {
+    margin-left: 10px;
+}
+main section.main-content .main-container .lateral-menu .sidebar nav .log-out {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+}
+main section.main-content .main-container .container-user-area {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    transform: translate(0, -100%);
+    width: 900px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 0fr) 1fr;
+    grid-template-rows: 1fr repeat(4, 0fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+main section.main-content .main-container .container-user-area .users-publication {
+    grid-area: 1 / 1 / 2 / 2;
+    background-image: linear-gradient( 135deg, #CE9FFC 10%, #7367F0 100%);
+    border-right: 2px solid #fff;
+}
+main section.main-content .main-container .container-user-area .users-publication .local-publication {
+    position: relative;
+    width: 400px;
+    height: 290px;
+    margin: 10px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    background-image: linear-gradient( 135deg, #CE9FFC 10%, #7367F0 100%);
+}
+main section.main-content .main-container .container-user-area .users-publication .local-publication .header-perfil-user {
+    width: 100%;
+    height: 70px;
+    padding: 10px;
+    display: flex;
+}
+main section.main-content .main-container .container-user-area .users-publication .local-publication .header-perfil-user .circle-perfil-user#genos_user {
+    width: 50px;
+    height: 50px;
+    background-image: url("sugestion-users/genos.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+main section.main-content .main-container .container-user-area .users-publication .local-publication .header-perfil-user .circle-perfil-user#shigeo_user{
+    width: 50px;
+    height: 50px;
+    background-image: url("sugestion-users/shigeo_kageyama.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+main section.main-content .main-container .container-user-area .users-publication .local-publication .header-perfil-user .circle-perfil-user#sasuke_user{
+    width: 50px;
+    height: 50px;
+    background-image: url("sugestion-users/sasuke_uchila.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+main section.main-content .main-container .container-user-area .users-publication .local-publication .header-perfil-user .name-perfil-user {
+    width: 100px;
+    height: 100%;
+    padding: 10px;
+}
+main section.main-content .main-container .container-user-area .users-publication .local-publication .header-perfil-user .name-perfil-user span {
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: 3px;
+}
+main section.main-content .main-container .container-user-area .users-publication .local-publication .header-perfil-user .content-publication {
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100%;
+    padding: 10px;
+}
+main section.main-content .main-container .container-user-area .users-publication .local-publication .header-perfil-user .content-publication span {
+    font-size: 14px;
+    color: #fafafa;
+}
+main section.main-content .main-container .container-user-area .users-publication .local-publication .image-publication#genos_publication {
+    width: 100%;
+    height: 180px;
+    background-image: url("users-publication/moster_01.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: .3s;
+}
+main section.main-content .main-container .container-user-area .users-publication .local-publication .image-publication#genos_publication:hover {
+    transform: scale(.99);
+}
+main section.main-content .main-container .container-user-area .users-publication .local-publication .image-publication#shigeo_publication {
+    width: 100%;
+    height: 180px;
+    background-image: url("users-publication/mob_publication.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: .3s;
+}
+main section.main-content .main-container .container-user-area .users-publication .local-publication .image-publication#shigeo_publication:hover {
+    transform: scale(.99);
+}
+main section.main-content .main-container .container-user-area .users-publication .local-publication .image-publication#sasuke_publication {
+    width: 100%;
+    height: 180px;
+    background-image: url("users-publication/sasuke-naruto.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: .3s;
+}
+main section.main-content .main-container .container-user-area .users-publication .local-publication .image-publication#sasuke_publication:hover {
+    transform: scale(.99);
+}
+main section.main-content .main-container .container-user-area .users-publication .local-publication .sub-header-publication {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+main section.main-content .main-container .container-user-area .users-publication .local-publication .sub-header-publication .li-co-sh {
+    width: 150px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+main section.main-content .main-container .container-user-area .users-publication .local-publication .sub-header-publication .li-co-sh i {
+    font-size: 16px;
+    color: #fafafa;
+    cursor: pointer;
+}
+main section.main-content .main-container .container-user-area .users-publication .local-publication .sub-header-publication .save-it {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main section.main-content .main-container .container-user-area .users-publication .local-publication .sub-header-publication .save-it i {
+    font-size: 18px;
+    color: #fafafa;
+    cursor: pointer;
+}
+main section.main-content .main-container .container-user-area .sugestion-users {
+    grid-area: 1 / 5 / 2 / 6;
+    background-image: linear-gradient( 135deg, #E2B0FF 10%, #9F44D3 100%);
+}
+main section.main-content .main-container .container-user-area .sugestion-users .container-sugestion {
+    position: relative;
+    width: 100%;
+    height: 700px;
+}
+main section.main-content .main-container .container-user-area .sugestion-users .container-sugestion .sub-header {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main section.main-content .main-container .container-user-area .sugestion-users .container-sugestion .sub-header span {
+    font-size: 2rem;
+    color: #fafafa;
+}
+main section.main-content .main-container .container-user-area .sugestion-users .container-sugestion .all-users {
+    width: 100%;
+    height: 100%;
+}
+main section.main-content .main-container .container-user-area .sugestion-users .container-sugestion .all-users .user {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+main section.main-content .main-container .container-user-area .sugestion-users .container-sugestion .all-users .user .circle#saitama {
+    width: 70px;
+    height: 70px;
+    background-image: url("sugestion-users/saitama.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+}
+main section.main-content .main-container .container-user-area .sugestion-users .container-sugestion .all-users .user .circle#saitama {
+    width: 70px;
+    height: 70px;
+    background-image: url("sugestion-users/saitama.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+}
+main section.main-content .main-container .container-user-area .sugestion-users .container-sugestion .all-users .user .circle#shigeo_kageyama {
+    width: 70px;
+    height: 70px;
+    background-image: url("sugestion-users/shigeo_kageyama.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+}
+main section.main-content .main-container .container-user-area .sugestion-users .container-sugestion .all-users .user .circle#genos {
+    width: 70px;
+    height: 70px;
+    background-image: url("sugestion-users/genos.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+}
+main section.main-content .main-container .container-user-area .sugestion-users .container-sugestion .all-users .user .circle#sasuke_uchila {
+    width: 70px;
+    height: 70px;
+    background-image: url("sugestion-users/sasuke_uchila.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+}
+main section.main-content .main-container .container-user-area .sugestion-users .container-sugestion .all-users .user .circle#naruto {
+    width: 70px;
+    height: 70px;
+    background-image: url("sugestion-users/naruto.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+}
+main section.main-content .main-container .container-user-area .sugestion-users .container-sugestion .all-users .user .circle#eren_yeager {
+    width: 70px;
+    height: 70px;
+    background-image: url("sugestion-users/eren_yeager.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+}
+main section.main-content .main-container .container-user-area .sugestion-users .container-sugestion .all-users .user .name-perfil {
+    width: 200px;
+    height: 60px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+main section.main-content .main-container .container-user-area .sugestion-users .container-sugestion .all-users .user .name-perfil span {
+    font-size: 22px;
+    color: #fff;
+}
+main section.main-content .main-container .container-user-area .sugestion-users .container-sugestion .all-users .user .name-perfil input {
+    width: 80px;
+    height: 30px;
+    margin-top: 4px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    background: #fafafa;
+}
+main section.main-content .main-container .container-user-area .sugestion-users .container-sugestion .all-users .user .name-perfil input:hover {
+    background: transparent;
+    color: #fafafa;
+    border: 2px solid #fafafa
+}
+main section.main-content .main-container .container-user-area .sugestion-users .container-sugestion .all-users .update-users {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main section.main-content .main-container .container-user-area .sugestion-users .container-sugestion .all-users .update-users input {
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 25px;
+    border: none;
+    background: #fafafa;
+}
+main section.main-content .main-container .container-user-area .sugestion-users .container-sugestion .all-users .update-users input:hover {
+    background: transparent;
+    border: 2px solid #fafafa;
+    color: #fff;
+}
+main footer {
+    position: absolute;
+    width: 100%;
+    height: 310px;
+    bottom: 0;
+    background: #F3EFE0;
+    padding: 10px;
+}
+main footer .main-container-footer {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient( 135deg, #CE9FFC 10%, #7367F0 100%);
+}
+main footer .custom-shape-divider-bottom-1679941982 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+main footer .custom-shape-divider-bottom-1679941982 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 80px;
+}
+main footer .custom-shape-divider-bottom-1679941982 .shape-fill {
+    fill: #FFFFFF;
+}
+body {
+    position: relative;
+    height: 300vh;
+    background-color: #F3EFE0;
+}
