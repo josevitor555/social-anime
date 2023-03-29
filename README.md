@@ -12,7 +12,3 @@
 ![josevitor555 GitHub stats](https://github-readme-stats.vercel.app/api?username=josevitor555&show_icons=true&theme=dracula)
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=josevitor555&hide_progress=true)](https://github.com/josevitor555/github-readme-stats)
-
-## Meu E-mail de contato:
-
-[![E-mail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](https://mail.google.com/mail/u/0/#inbox)
