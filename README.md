@@ -12,3 +12,6 @@
 ![josevitor555 GitHub stats](https://github-readme-stats.vercel.app/api?username=josevitor555&show_icons=true&theme=dracula)
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=josevitor555&hide_progress=true)](https://github.com/josevitor555/github-readme-stats)
+
+## Note:
+> Este site não possui uma tela responsiva!
